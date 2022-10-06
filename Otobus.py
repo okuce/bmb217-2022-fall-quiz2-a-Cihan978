@@ -1,26 +1,28 @@
+""" Esat Cihan Özgültekin"""
+"""20217170028"""
+
 class Otobus:
     nereden:str=""
     nereye:str=""
     plaka:str=""
-    bos_koltuk:int=0
     dolu_koltuk:int=0
-
-    def init(self,nereden,nereye,plaka,bos_koltuk,dolu_koltuk) :
-        self.nereden=nereden
-        self.nereye=nereye
-        self.plaka=plaka
-        self.bos_koltuk=bos_koltuk
-        self.dolu_koltuk=dolu_koltuk
-
+    
+    def __init__(self,plaka,nereden,nereye,dolu_koltuk) :
+       self.plaka=plaka
+       self.nereden=nereden
+       self.nereye=nereye
+       self.dolu_koltuk=dolu_koltuk
 
     def bilet_sat(self):
         """Otobusteki dolu koltuk sayisini 1 artirir"""
-        return self.dolu_koltuk +=1
+        self.dolu_koltuk=self.dolu_koltuk+1
+        return self.dolu_koltuk
 
 
     def bilet_iade(self):
         """Otobusteki dolu koltuk sayisini 1 azaltir"""
-        return self.bos_koltuk -= 1
+        self.dolu_koltuk=self.dolu_koltuk-1
+        return self.dolu_koltuk
 
 
 
