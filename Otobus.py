@@ -1,4 +1,4 @@
-""" Esat Cihan Özgültekin"""
+"""Esat Cihan Özgültekin"""
 """20217170028"""
 
 class Otobus:
@@ -7,7 +7,7 @@ class Otobus:
     plaka:str=""
     dolu_koltuk:int=0
     
-    def _init_(self,plaka,nereden,nereye,dolu_koltuk) :
+    def__init__(self,plaka,nereden,nereye,dolu_koltuk) :
        self.plaka=plaka
        self.nereden=nereden
        self.nereye=nereye
