@@ -7,11 +7,11 @@ class Otobus:
     plaka:str=""
     dolu_koltuk:int=0
     
-    def__init__(self.plaka,nereden,nereye,dolu_koltuk) :
+    def__init__(self,plaka,nereden,nereye,dolu_koltuk) :
        self.plaka=plaka
        self.nereden=nereden
        self.nereye=nereye
-       self.dolu_koltuk=dolu_koltuk
+       self._dolu_koltuk=dolu_koltuk
 
     def bilet_sat(self):
         """Otobusteki dolu koltuk sayisini 1 artirir"""
