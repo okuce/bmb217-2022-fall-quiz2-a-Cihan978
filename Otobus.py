@@ -7,7 +7,7 @@ class Otobus:
     plaka:str=""
     dolu_koltuk:int=0
     
-    def __init__(self,plaka,nereden,nereye,dolu_koltuk) :
+    def _init_(self,plaka,nereden,nereye,dolu_koltuk) :
        self.plaka=plaka
        self.nereden=nereden
        self.nereye=nereye
@@ -28,4 +28,4 @@ class Otobus:
 
     def durum_yaz(self):
         """Otobusun guzergahini, plakasini,bos ve dolu koltuk sayisini yazdirir"""
-        print("Otobüs güzergahi:{}{},Plaka:{} ,Bos Koltuk:{},Dolu Koltuk:{} ",format(self.nereden,self.nereye,self.plaka,self.bos_koltuk,self.dolu_koltuk))
+        print("Otobüs güzergahi:{}{},Plaka:{} ,Dolu Koltuk:{} ",format(self.nereden,self.nereye,self.plaka,self.dolu_koltuk))
